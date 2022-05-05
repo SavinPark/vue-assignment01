@@ -4,7 +4,7 @@ export default {
   state: {
     todolist: [
       {todo: 'Vue.js 과제하기'},
-      {todo: '코딩테스트 풀이'},
+      {todo: '코딩테스트 문제 풀이'},
       {todo: '책 읽기'},
     ],
   },
@@ -18,8 +18,7 @@ export default {
   },
   mutations: {
     addTodo(state, value) {
-      // state.todolist.push({todo: value});
-      state.todolist = [...state.todolist, {todo: value}];
+      state.todolist.push({todo: value});
 
     },
     delTodo(state, value) {
@@ -27,8 +26,5 @@ export default {
     },
   },
   actions: {
-    // addTodo(context, value) {
-    //   context.commit('addTodo', value);
-    // },
   },
 }

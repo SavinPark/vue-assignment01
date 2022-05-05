@@ -19,10 +19,20 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/TodolistView.vue')
   },
   {
+    path: '/todolistInfo',
+    name: 'todolistInfo',
+    component: () => import(/* webpackChunkName: "about" */ '../views/TodolistInfoView.vue')
+  },
+  {
     path: '/calculator',
     name: 'calculator',
     component: () => import(/* webpackChunkName: "about" */ '../views/CalculatorView.vue')
-  }
+  },
+  {
+    path: '/calculatorInfo',
+    name: 'calculatorInfo',
+    component: () => import(/* webpackChunkName: "about" */ '../views/CalculatorInfoView.vue')
+  },
 ]
 
 const router = new VueRouter({

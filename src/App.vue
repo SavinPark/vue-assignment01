@@ -50,7 +50,9 @@
       selectedItem: 0,
       items: [
         { text: 'Home', icon: 'mdi-home', to: '/' },
+        { text: 'Todolist Info', icon: 'mdi-message-text', to: '/todolistInfo' },
         { text: 'Todolist', icon: 'mdi-calendar-check', to: '/todolist' },
+        { text: 'Calculator Info', icon: 'mdi-message-text', to: '/calculatorInfo' },
         { text: 'Calculator', icon: 'mdi-calculator', to: '/calculator' },
       ],
     }),

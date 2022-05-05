@@ -40,7 +40,6 @@ export default {
     operation(event) {
       switch(event.target.value) {
         case '+' :
-          // alert(parseInt(this.getVal01) + parseInt(this.getVal02));
           this.$store.commit('setOperator', '+');
           this.$store.commit('setResult', parseInt(this.getVal01) + parseInt(this.getVal02));
           break;
