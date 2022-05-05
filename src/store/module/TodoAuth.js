@@ -1,0 +1,34 @@
+export default {
+  namespace: true,
+
+  state: {
+    todolist: [
+      {todo: 'Vue.js 과제하기'},
+      {todo: '코딩테스트 풀이'},
+      {todo: '책 읽기'},
+    ],
+  },
+  getters: {
+    getTest(state) {
+      return state.test;
+    },
+    getTodolist(state) {
+      return state.todolist;
+    },
+  },
+  mutations: {
+    addTodo(state, value) {
+      // state.todolist.push({todo: value});
+      state.todolist = [...state.todolist, {todo: value}];
+
+    },
+    delTodo(state, value) {
+      state.todolist.splice(value, 1);
+    },
+  },
+  actions: {
+    // addTodo(context, value) {
+    //   context.commit('addTodo', value);
+    // },
+  },
+}
