@@ -33,6 +33,11 @@ const routes = [
     name: 'calculatorInfo',
     component: () => import(/* webpackChunkName: "about" */ '../views/CalculatorInfoView.vue')
   },
+  {
+    path: '/axios',
+    name: 'axios',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AxiosView.vue')
+  },
 ]
 
 const router = new VueRouter({

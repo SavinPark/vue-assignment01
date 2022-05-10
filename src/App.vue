@@ -54,6 +54,7 @@
         { text: 'Todolist', icon: 'mdi-calendar-check', to: '/todolist' },
         { text: 'Calculator Info', icon: 'mdi-message-text', to: '/calculatorInfo' },
         { text: 'Calculator', icon: 'mdi-calculator', to: '/calculator' },
+        { text: 'Axios', icon: 'mdi-cube-outline', to: '/axios' },
       ],
     }),
   }
